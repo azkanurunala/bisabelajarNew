@@ -1,7 +1,7 @@
 <div  class="tab-pane active">
 <?php include ('pages/profil/layout/tabSwitch.php') ?>
 <section id="profilku" class="padding-all" >
-  <div class="red-bg-3 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius bottom-border-small-2">
+  <div class="grey-bg-2 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius ">
           <div   class="  row text-center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="col-sm-12 col-md-12 text-left">
 
@@ -246,7 +246,7 @@
 
 
 <section id="raporku" class="padding-all" >
-  <div class="yell-bg-2 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius bottom-border-small-2">
+<div class="grey-bg-2 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius ">
           <div   class="  row text-center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="col-sm-12 col-md-12 text-left">
 
@@ -357,7 +357,7 @@
 </section>
 
 <section id="lencanaku" class="padding-all" >
-  <div class="yell-bg-2 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius bottom-border-small-2">
+<div class="grey-bg-2 top-margin-narrow left-margin-narrow right-margin-tiny row top-radius ">
           <div   class="  row text-center collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="col-sm-12 col-md-12 text-left">
 

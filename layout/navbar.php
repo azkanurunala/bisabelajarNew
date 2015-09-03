@@ -32,9 +32,9 @@
                     <li>
                         <a class="page-scroll" href="hubungi.php">Hubungi Kami</a>
                     </li>
-                   <li>
+<!--                    <li>
                         <a class="page-scroll" href="career">Karir</a>
-                    </li>
+                    </li> -->
                 </ul>
 
 
