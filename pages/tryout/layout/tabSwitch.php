@@ -9,7 +9,7 @@
                 <ul class="nav navbar-nav" id="select" >
                     <li id="asd">
                         <a  class="link-tab" data-toggle="tab" href="#selectSD">
-                        <img class="level-icon" src="img/class/level-sd.png">
+                        <img class="level-icon responsive-image" src="img/class/level-sd.png">
                         <h4 class="bold font-green">SD</h4>
                         </a>
                     </li>

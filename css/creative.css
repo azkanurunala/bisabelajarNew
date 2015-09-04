@@ -213,6 +213,11 @@ header {
     -o-background-size: cover;
 }
 
+.responsive-image{
+        height:auto;
+        width:100%;
+}
+
 .front-bg{
 
     position: relative;
@@ -2718,6 +2723,10 @@ h5{
 
 
 @media(max-width: 768px){
+.row{
+    margin-bottom: 5% !important;
+    padding: 0 !important;
+}
 .black-bg{
         /*#013645*/ /*#125C67*/
         background-color:#027587 ;

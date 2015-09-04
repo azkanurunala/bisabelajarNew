@@ -17,7 +17,7 @@
                             <h4 class="new-info title"> <?php include ('contents/judul-1.txt'); ?></h4>
                             </a>
                             <a href="news-content.php">
-                            <img class="img-info-large" src="contents/gambar-1.png"/>
+                            <img class="img-info-large responsive-image" src="contents/gambar-1.png"/>
                             </a>
                             <h5 class="new-info author "><?php include ('contents/penulis-1.txt'); ?></h5>
                             
@@ -38,7 +38,7 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.php">
-                            <img class="img-info-large" src="contents/gambar-2.png"/>
+                            <img class="img-info-large responsive-image" src="contents/gambar-2.png"/>
                             </a>
                           
                         </div>
@@ -58,7 +58,7 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.php">
-                            <img class="img-info-large" src="contents/gambar-3.png"/>
+                            <img class="img-info-large responsive-image" src="contents/gambar-3.png"/>
                             </a>
                           
                         </div>
@@ -78,7 +78,7 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.php">
-                            <img class="img-info-large" src="contents/gambar-4.png"/>
+                            <img class="img-info-large responsive-image" src="contents/gambar-4.png"/>
                             </a>
                           
                         </div>
