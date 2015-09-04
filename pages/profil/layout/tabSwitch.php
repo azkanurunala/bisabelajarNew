@@ -1,6 +1,6 @@
 
     <nav id="mainNav" class="text-center navbar tab-switch-default ">
-        <div class="container container-fluid">
+    
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="col-sm-12 col-md-4">
             </div>
@@ -44,5 +44,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
 
    

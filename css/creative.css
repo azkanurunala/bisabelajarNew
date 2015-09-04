@@ -1649,14 +1649,15 @@ a.link-tab{
 
 .grey-bg{
     background-color: #f7f7f7 !important ;
-    box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;;
+/*    box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;;
     -webkit-box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;
     -moz-box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;;
-    -o-box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;;
+    -o-box-shadow: 0px 1px 5px 0px white inset,0px -1px 5px 0px white inset ;;*/
 }
 
 .grey-bg-2{
-    background-color: #f7f7f7 !important ;
+    background-color: #bdc3c7 !important ;
+    color: white !important;
 }
 
 .value-icon{
@@ -1931,6 +1932,11 @@ hr.primary{
     color: white !important;
 }
 
+/*.grey-bg{
+    background-color: #bdc3c7 !important;  
+    color: white!important;
+    border-color: transparent !important;
+}*/
 .yell-bg-2{
     background-color: #F6AB02 !important;  
     color: white !important;
@@ -2721,6 +2727,56 @@ h5{
     min-width: 240px !important;
 }
 
+
+@media(max-width: 700px){
+    .btn-primary{
+        width:100% !important;
+    }
+    .icon-medium{
+        width:100% !important;
+        height:auto !important;
+    }
+
+    .img-info-large{
+        width:100% !important;
+        height:auto !important;
+    }
+    .no-padding{
+        width:100% !important;
+        height:auto !important;  
+        padding-left: 20px !important;
+        margin-top: 20px!important;     
+    }
+
+    .footer{
+
+         padding: 0 !important;
+         position: relative;
+        
+         background-width: 100% !important;
+         background-height:100% !important;
+         min-height: auto;
+        text-align: center;
+        width:100% !important;
+        height: auto !important;
+        color: #fff;
+        background-image: url(../img/footer.png);
+        /*background-color: #199FB3;*/
+        background-color: #F39C12;
+        background-position: center;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        /*box-shadow: 0px -1px 1px 0px #95a5a6;
+        -webkit-box-shadow: 0px -1px 1px 0px #95a5a6;
+        -moz-box-shadow: 0px -1px 1px 0px #95a5a6;
+        -o-box-shadow: 0px -1px 1px 0px #95a5a6;*/
+        /* left right bottom up */
+    }
+
+}
 
 @media(max-width: 768px){
 .row{
