@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'layout/head.html' %}
+
+<body id="about">
+    {% include 'layout/navbar.html' %}
+    {% include 'layout/headerHalf.html' %}
+    
+    <!--?php include ('layout/header.html') ?-->
+    <div class="tab tab-content">
+		
+        {% include 'pages/about/layout/tentang-kami.html' %}
+        {% include 'pages/about/layout/tim-kami.html' %}
+        {% include 'pages/about/layout/kata-mereka.html' %}
+        
+	</div>
+    
+	{% include 'layout/quote.html' %}
+	{% include 'layout/footer.html' %}
+	{% include 'layout/foot.html' %}
+
+
+</body>
+
+</html>
