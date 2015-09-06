@@ -57,7 +57,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <div class="short-input transparent-form ">
-                             <input type="text" class="transparent"  placeholder="Cari Kelas...">
+                             <input type="text" class="transparent" name="search" placeholder="Cari Kelas...">
                              <a class="search-button" href="#" ><i class="fa fa-search"></i></a>
                         </div>
                     </li>

@@ -1,0 +1,5 @@
+Bugs
+
+- Tab Categories di Kelas dan Tryout Hilang saat layar diperkecil
+- Navbar Hilang saat diperkecil dan tidak bisa terbuka
+- padding-left di judul berita pada halaman info
