@@ -1,10 +1,20 @@
-<section id="recent-info">
+<!DOCTYPE html>
+<html lang="en">
+{% include 'layout/head.html' %}
+
+
+<body id="home">
+    {% include 'layout/navbar.html' %}
+    {% include 'layout/header.html' %}
+    {% include 'layout/newClasses.html' %}
+
+    <section id="recent-info">
     <div class="container ">
         <div class="row text-center  wow bounceIn">
             
-          <!--img class="icon" src="static/img/new_info.png"/-->
-          <h3 class="section-heading"><i class="fa fa-newspaper-o"></i> Info Terbaru</h3>
-          <hr class="primary">
+            <!--img class="icon" src="/static/img/new_info.png"/-->
+            <h3 class="section-heading"><i class="fa fa-newspaper-o"></i> Info Terbaru</h3>
+            <hr class="primary">
                 
         </div>
 
@@ -14,17 +24,19 @@
                     <div class="row">
                         <p>
                             <a class="new-info title" href="news-content.html">
-                            <h4 class="new-info title"> {% include 'contents/judul-1.txt' %}</h4>
+                            <h4 class="new-info title"> {% include 'dummies/contents/judul-1.txt' %}</h4>
                             </a>
                             <a href="news-content.html">
-                            <img class="img-info-large" src="static/img/contents/gambar-1.png"/>
+                            <img class="img-info-large" src="/static/img/dummies/contents/gambar-1.png"/>
                             </a>
-                            <h5 class="new-info author ">{% include 'contents/penulis-1.txt' %}</h5>
+                            <h5 class="new-info author ">{% include 'dummies/contents/penulis-1.txt' %}</h5>
                             
                            
                             <p class="new-info paragraph" >
-                              {% include 'contents/isi-1.txt' %}
-                              <a class="link-info top-margin right-margin  text-right " href="news-content.html" >  BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                              	{% include 'dummies/contents/isi-1.txt' %}
+                              	<a class="link-info top-margin right-margin  text-right " href="news-content.html" >
+                                    BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
                             </p>
                         </p>
                     </div>
@@ -37,17 +49,17 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.html">
-                            <img class="img-info-large" src="static/img/contents/gambar-2.png"/>
+                            <img class="img-info-large" src="/static/img/dummies/contents/gambar-2.png"/>
                             </a>
                           
                         </div>
                         <div class="no-padding col-sm-12 col-md-7">
                             <a href="news-content.html">
-                            <h4 class=" no-padding new-info title"> {% include 'contents/judul-2.txt' %}</h4>
+                            <h4 class=" no-padding new-info title"> {% include 'dummies/contents/judul-2.txt' %}</h4>
                             </a>
-                            <h5 class=" new-info author ">{% include 'contents/penulis-2.txt' %}</h5>
+                            <h5 class=" new-info author ">{% include 'dummies/contents/penulis-2.txt' %}</h5>
                             <p class="new-info paragraph" >
-                               {% include 'contents/isi-2.txt' %}
+                               {% include 'dummies/contents/isi-2.txt' %}
                                 <a class="link-info top-margin right-margin  text-right " href="news-content.html" >  BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
                             </p>
                         </div>
@@ -57,17 +69,17 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.html">
-                            <img class="img-info-large" src="static/img/contents/gambar-3.png"/>
+                            <img class="img-info-large" src="/static/img/dummies/contents/gambar-3.png"/>
                             </a>
                           
                         </div>
                         <div class="no-padding col-sm-12 col-md-7">
                             <a href="news-content.html">
-                            <h4 class=" no-padding new-info title"> {% include 'contents/judul-3.txt' %}</h4>
+                            <h4 class=" no-padding new-info title"> {% include 'dummies/contents/judul-3.txt' %}</h4>
                             </a>
-                            <h5 class=" new-info author ">{% include 'contents/penulis-3.txt' %}</h5>
+                            <h5 class=" new-info author ">{% include 'dummies/contents/penulis-3.txt' %}</h5>
                             <p class="new-info paragraph" >
-                               {% include 'contents/isi-3.txt' %}
+                               {% include 'dummies/contents/isi-3.txt' %}
                                 <a class="link-info top-margin right-margin  text-right " href="news-content.html" >  BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
                             </p>
                         </div>
@@ -77,17 +89,17 @@
                         <div class="col-sm-12 col-md-5">
                           
                             <a href="news-content.html">
-                            <img class="img-info-large" src="static/img/contents/gambar-4.png"/>
+                            <img class="img-info-large" src="/static/img/dummies/contents/gambar-4.png"/>
                             </a>
                           
                         </div>
                         <div class="no-padding col-sm-12 col-md-7">
                             <a href="news-content.html">
-                            <h4 class=" no-padding new-info title"> {% include 'contents/judul-4.txt' %}</h4>
+                            <h4 class=" no-padding new-info title"> {% include 'dummies/contents/judul-4.txt' %}</h4>
                             </a>
-                            <h5 class=" new-info author ">{% include 'contents/penulis-4.txt' %}</h5>
+                            <h5 class=" new-info author ">{% include 'dummies/contents/penulis-4.txt' %}</h5>
                             <p class="new-info paragraph" >
-                               {% include 'contents/isi-4.txt' %}
+                               {% include 'dummies/contents/isi-4.txt' %}
                                 <a class="link-info top-margin right-margin  text-right " href="news-content.html" > BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
                             </p>
                         </div>
@@ -96,14 +108,15 @@
                      <div class="row text-right">
                                <a class="link-info-full top-margin right-margin  text-right " href="info.html" ><h4> LIHAT SELENGKAPNYA <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></h4> </a>
                      </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div> 
+	</section>
+    
+    {% include 'layout/quote.html' %}
+    {% include 'layout/footer.html' %}
+    {% include 'layout/foot.html' %}
+</body>
 
-                </div>
-                    
-            </div>
-
-        </div>
-    </div> 
-       
-
-   
-</section>
+</html>

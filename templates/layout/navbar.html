@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html#page-top"><img src="static/img/logo_typo.png"></a>
+                <a class="navbar-brand page-scroll" href="{% url 'home:home' %}#page-top"><img src="/static/img/logo_typo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,14 +27,16 @@
                         <a class="page-scroll" href="info.html">Info</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">Tentang</a>
+                        <a class="page-scroll" href="{% url 'home:about' %}">Tentang</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="hubungi.html">Hubungi Kami</a>
+                        <a class="page-scroll" href="{% url 'home:contact' %}">Hubungi Kami</a>
                     </li>
-                   <li>
+                    <!--
+                    <li>
                         <a class="page-scroll" href="career">Karir</a>
                     </li>
+                    -->
                 </ul>
 
 
@@ -50,7 +52,7 @@
                         <a class="no-right-padding page-scroll" href="profil.html">Profil</a>
                     </li>
                     <li id="profil-img" class="no-left-margin">
-                        <a class="tiny-left-padding page-scroll " href="profil.html"><img class="navbar-brand no-margin no-padding image-circle-small2" src="static/img/contributor/002/img.jpg" ></a>
+                        <a class="tiny-left-padding page-scroll " href="profil.html"><img class="navbar-brand no-margin no-padding image-circle-small2" src="/static/img/contributor/002/img.jpg" ></a>
                     </li>
                   
                 </ul>

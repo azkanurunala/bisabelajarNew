@@ -4,7 +4,7 @@
             <div class="text-left">
                 
                 <div class="col-sm-12 col-md-2 text-left">
-                     <img class="logo-large img-responsive" src="static/img/footer_logo.png"/>
+                     <img class="logo-large img-responsive" src="/static/img/footer_logo.png"/>
                 </div>
                 <div class="top-margin-narrow col-sm-12 col-md-10 text-left">
                      <!--h4>Sitemap </h4-->
@@ -18,8 +18,8 @@
 
 
                             <div class="col-sm-12 col-md-2">
-                                <a href="about.html" class="sitemap page-scroll"><h5>Tentang</h5></a>
-                                <a href="hubungi.html" class="sitemap page-scroll"><h5>Hubungi Kami</h5></a>
+                                <a href="{% url 'home:about' %}" class="sitemap page-scroll"><h5>Tentang</h5></a>
+                                <a href="{% url 'home:contact' %}" class="sitemap page-scroll"><h5>Hubungi Kami</h5></a>
                             </div>
 
 

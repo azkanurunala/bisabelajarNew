@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'layout/head.html' %}
+
+<body id="about">
+    {% include 'layout/navbar.html' %}
+    {% include 'layout/headerHalf.html' %}
+
+    <!-- Tab "Tentang Kami" -->
+    <div class="tab tab-content">
+		
+        <div id="tentangKami" class="tab-pane active">
+            {% include 'pages/about/layout/tabSwitch.html' %}
+            <section>
+            
+                <div class="container">
+                    <div class="row text-center">
+            
+                      <h4 class="section-heading">Tentang BisaBelajar</h4>
+                      <hr class="primary">
+                            
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+            
+                                    <p class="paragraph" >
+                                      <img align="left" class="right-margin bottom-margin-narrow img-responsive" src="/static/img/logo.png"/>
+                                   
+                                      {% include 'dummies/contents/tentang/tentang-kami.txt' %}
+                                    </p>
+                        </div>
+                    </div>
+                </div> 
+               
+            </section>
+            
+            <section id="valueKami" class="grey-bg">
+                <div class="container">
+                    <div class="row text-center">
+            
+            
+            
+                      <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-3">
+                                <img class="value-icon" src="/static/img/mm-icon.png">
+                                <h4 class="top-margin-narrow bottom-margin-narrow font-green bold">Materi Melimpah</h4>
+                                <p>Kami memiliki sumber materi pelajaran yang melimpah ruah</p>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <img class="value-icon" src="/static/img/vm-icon.png">
+                                <h4 class="top-margin-narrow bottom-margin-narrow font-green bold">Video Menarik</h4>
+                                <p>Dengan Konsep Video yang menarik, belajar pun lebih menyenangkan!</p>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <img class="value-icon" src="/static/img/ls-icon.png">
+                                <h4 class="top-margin-narrow bottom-margin-narrow font-green bold">Latihan Soal</h4>
+                                <p>Latihan soal di setiap bab membuat kamu semakin memahami materi pelajaran</p>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <img class="value-icon" src="/static/img/gr-icon.png">
+                                <h4 class="top-margin-narrow bottom-margin-narrow font-green bold">Gratis</h4>
+                                <p>Ya, kamu bisa mendapatkan semua itu secara cuma-cuma</p>
+                            </div>
+                      </div>
+                            
+                    </div>
+            
+                    </div>
+             
+               
+            </section>
+            
+            <section id="compro" class="black-bg class-bg">
+              <div class="container">
+                <div class="row text-center">
+                    <iframe allow-fullscreen="true" width="720" height="360" src="https://www.youtube.com/embed/syBv25_aozo" frameborder="0" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+               </div>
+            </section>
+        </div>
+        
+        
+        <!-- Tab "Tim Kami" -->
+        <div id="timKami" class="tab-pane">
+            {% include 'pages/about/layout/tabSwitch.html' %}
+            <section>
+                <div class="container">
+                    <div class="row text-center">
+            
+                      <h4 class="section-heading">Tim Kami</h4>
+                      <hr class="primary">
+                            
+                    </div>
+            
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-12">
+                                
+                                <div class="col-sm-12 col-md-4">
+            
+                                    <div class="photo-container">
+                                        <img class="" src="/static/img/photos/dikry.jpg"/>
+                                    </div>
+                                    <br>
+                                    <a href="#"><i class="fade-away fa fa-facebook fb social-icon"></i></a>
+                                    <a href="#"><i class="fade-away fa fa-twitter twitter social-icon"></i></a>
+                                    <h4 class="top-border-narrow bottom-border-narrow font-green bold">Dikry Paren   <yellow>CEO</yellow></h4>
+                                    <p>
+                                    An <bold>idealist</bold>, passionate in social activity, currently enrolled as a
+                                    student of Islamic Business, Universitas Indonesia
+                                    </p>
+                            
+                                </div>
+            
+                                <div class="col-sm-12 col-md-4">
+            
+                                    <div class="photo-container">
+                                        <img class="" src="/static/img/photos/gandra.jpg"/>
+                                    </div>
+                                    <br>
+                                    <a href="#"><i class="fade-away fa fa-facebook fb social-icon"></i></a>
+                                    <a href="#"><i class="fade-away fa fa-twitter twitter social-icon"></i></a>
+                                    <h4 class="top-border-narrow bottom-border-narrow font-green bold">Gandra Braino   <yellow>CFO</yellow></h4>
+                                    <p>
+                                    A <bold> Revolutionarist </bold>, an accounting graduate of Universitas Indonesia with 
+                                    experience as an auditor and financial consultant. 
+                                    </p>
+                            
+                                </div>
+            
+                                <div class="col-sm-12 col-md-4">
+            
+                                    <div class="photo-container">
+                                        <img class="" src="/static/img/photos/azka.jpg"/>
+                                    </div>
+                                    <br>
+                                    <a href="#"><i class="fade-away fa fa-facebook fb social-icon"></i></a>
+                                    <a href="#"><i class="fade-away fa fa-twitter twitter social-icon"></i></a>
+                                    <h4 class="top-border-narrow bottom-border-narrow font-green bold">Azka Nurun Ala   <yellow>CTO</yellow></h4>
+                                    <p>
+                                    An <bold>Innovator</bold>,  
+                                    a quick learner who loves novelty and challenges, also a student of 
+                                    Faculty of Computer Science, Universitas Indonesia.
+                                    </p>
+                            
+                                </div>
+                        </div>
+                    </div>
+                </div> 
+               
+            </section>
+            
+            <section id="kontributor" class="grey-bg  ">
+                <div class="container">
+            
+                    <div class="row text-center">
+            
+                      <h4 class="section-heading">Kontributor</h4>
+                      <hr class="primary">
+                            
+                    </div>
+            
+                    <div class="row text-center">
+            
+            
+            
+                      <div class="col-sm-12 col-md-12 text-center">
+            
+                            <div class="row bottom-margin-narrow">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/001/img.jpg" >
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/001/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/001/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/001/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/002/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/002/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/002/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/002/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/003/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/003/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/003/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/003/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/004/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/004/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/004/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/004/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/005/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/005/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/005/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/005/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/006/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/006/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/006/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/006/graduate.txt' %}</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/007/img.jpg" >
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/007/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/007/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/007/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/008/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/008/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/008/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/008/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/009/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/009/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/009/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/009/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/010/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/010/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/010/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/010/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/011/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/011/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/011/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/011/graduate.txt' %}</h5>
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <img class="image-circle" src="/static/img/dummies/contributor/012/img.jpg">
+                                    <h4 class="font-green bold"> {% include 'dummies/contributor/012/name.txt' %} </h4>
+                                    <h5 ><yellow> {% include 'dummies/contributor/012/subject.txt' %}</yellow></h5>
+                                    <h5 class="bold"> {% include 'dummies/contributor/012/graduate.txt' %}</h5>
+                                </div>
+            
+                            </div>
+            
+                      </div>
+                            
+                    </div>
+            
+                    
+                </div> 
+               
+            </section>
+            
+            <section id="compro">
+              <div class="container">
+            
+                <div class="row text-center">
+            
+                      <h4 class="section-heading">Partner Kami</h4>
+                      <hr class="primary">
+                            
+                </div>
+            
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-12 text-center">
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/partner/idgw.png"></a>
+                           
+                        <!-- <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                   -->      <!--a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a>
+                        <a href="#"><img class="partner-logo col-sm-12 col-md-2" src="/static/img/logo_typo.png"></a-->
+                    </div>
+                </div>
+               </div>
+            </section>
+            
+            </div>
+        
+        
+        <!-- Tab "Kata Mereka" -->
+        <div id="kataMereka" class="tab-pane">
+
+            {% include 'pages/about/layout/tabSwitch.html' %}
+            <section>
+                <div class="container">
+                    <div class="row text-center">
+            
+                      <h4 class="section-heading">Kata Mereka tentang BisaBelajar</h4>
+                      <hr class="primary">
+                            
+                    </div>
+            
+                </div> 
+               
+            </section>
+            
+            <section id="compro" class="black-bg class-bg  ">
+              <div class="container">
+                <div class="row text-center">
+                    <iframe allow-fullscreen="true" width="800" height="400" src="https://www.youtube.com/embed/fSZtXaJO1bg" frameborder="0" allowfullscreen>
+                        
+                    </iframe>
+                </div>
+               </div>
+            </section>
+            
+            <section>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-2">
+                                <img class="image-circle" src="/static/img/photos/gandra.jpg">
+                            </div>
+                            <div class="yell-bg-2 top-radius bottom-radius col-sm-12 col-md-10 top-padding-medium">
+                                <p class="text-justify bottom-margin-narrow" >
+                                     {% include 'dummies/contents/tentang/kata-mereka-1.txt' %}
+                                </p>
+                                
+                                 <p class=" text-right no-margin" >
+                                    <i> {% include 'dummies/contents/tentang/km-person-1.txt' %}</i>
+                                </p>
+                            </div>
+                        </div>
+                            
+                    </div>
+            
+                    <div class="row top-margin text-center">
+                        <div class="col-sm-12 col-md-11">
+            
+                            <div class="white-bg  top-radius bottom-radius col-sm-12 col-md-10 top-padding-medium">
+                               
+                                <p class="text-justify bottom-margin-narrow font-grey" >
+                                     {% include 'dummies/contents/tentang/kata-mereka-2.txt' %}
+                                </p>
+                                
+                                 <p class=" text-right no-margin" >
+                                    <i> {% include 'dummies/contents/tentang/km-person-2.txt' %}</i>
+                                </p>
+                            </div>
+                             <div class="col-sm-12 col-md-2">
+                                <img class="image-circle" src="/static/img/photos/gandra.jpg">
+                            </div>
+            
+                        </div> 
+                    </div>
+                </div> 
+            </section>
+        </div>
+    </div>
+    
+	{% include 'layout/quote.html' %}
+	{% include 'layout/footer.html' %}
+	{% include 'layout/foot.html' %}
+
+
+</body>
+
+</html>
