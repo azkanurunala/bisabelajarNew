@@ -4,7 +4,7 @@
 
 <body id="about">
     {% include 'layout/navbar.html' %}
-    {% include 'layout/headerHalf.html' %}
+    {% include 'layout/headerHalf.html' with title='Tentang Kami' logo='/static/img/about.png' %}
 
     <!-- Tab "Tentang Kami" -->
     <div class="tab tab-content">
@@ -23,12 +23,18 @@
             
                     <div class="row">
                         <div class="col-sm-12 col-md-12">
-            
-                                    <p class="paragraph" >
-                                      <img align="left" class="right-margin bottom-margin-narrow img-responsive" src="/static/img/logo.png"/>
-                                   
-                                      {% include 'dummies/contents/tentang/tentang-kami.txt' %}
-                                    </p>
+                            <p class="paragraph" >
+                                <img align="left" class="right-margin bottom-margin-narrow img-responsive" src="/static/img/logo.png"/>
+                                Melalui <strong>BisaBelajar.com</strong>, kami berusaha untuk menyediakan pengalaman belajar yang inovatif, 
+                                efektif, dan inklusif untuk semua orang. Karena, kami percaya bahwa memperoleh pendidikan yang layak adalah 
+                                hak asasi manusia. BisaBelajar.com adalah sebuah platform di mana semua orang bisa belajar apapun secara gratis. 
+                                Visi besar kami adalah menjadi kelas online terbesar di Indonesia. Untuk  itu , kami mengembangkan konten dan 
+                                fasilitas untuk membantu siswa-siswa sukses dalam ujian nasional dan ujian masuk perguruan tinggi, atau sekedar 
+                                untuk meningkatkan prestasi belajar di kelas. Kami sangat menghargai segala proses pembelajaran. Oleh karenanya, 
+                                kami memastikan bahwa proses belajar itu dapat berlangsung secara menarik. Program belajar disajikan oleh para 
+                                guru yang kompeten melalui video-video yang menarik dan user-friendly, student-centric, dengan pendekatan berfokus 
+                                pada konsep, dan dilengkapi dengan latihan soal serta ringkasan untuk mempermudah pemahaman siswa.
+                            </p>
                         </div>
                     </div>
                 </div> 
@@ -341,11 +347,14 @@
                             </div>
                             <div class="yell-bg-2 top-radius bottom-radius col-sm-12 col-md-10 top-padding-medium">
                                 <p class="text-justify bottom-margin-narrow" >
-                                     {% include 'dummies/contents/tentang/kata-mereka-1.txt' %}
+                                     BisaBelajar.com sangat membantu untuk siswa-siswa Indonesia dalam memahami materi 
+                                     pelajaran dan mempersiapkan ujian. BisaBelajar juga dapat diakses secara gratis dan 
+                                     sangat user-friendly sehingga siswa dapat memperoleh pendidikan berkualitas kapanpun 
+                                     dan di manapun.
                                 </p>
                                 
-                                 <p class=" text-right no-margin" >
-                                    <i> {% include 'dummies/contents/tentang/km-person-1.txt' %}</i>
+                                <p class=" text-right no-margin" >
+                                    <i>Dr. Nurdin Sobari, Dosen dan Management Trainer FEBUI</i>
                                 </p>
                             </div>
                         </div>
@@ -358,11 +367,13 @@
                             <div class="white-bg  top-radius bottom-radius col-sm-12 col-md-10 top-padding-medium">
                                
                                 <p class="text-justify bottom-margin-narrow font-grey" >
-                                     {% include 'dummies/contents/tentang/kata-mereka-2.txt' %}
+                                    Pendidikan adalah hak semua manusia. Sayangnya, hak untuk memperoleh pendidikan belum 
+                                    merata di Indonesia. BisaBelajar.com menyediakan solusi yang signifikan dan sangat 
+                                    memungkinkan untuk dijalankan.
                                 </p>
                                 
                                  <p class=" text-right no-margin" >
-                                    <i> {% include 'dummies/contents/tentang/km-person-2.txt' %}</i>
+                                    <i>Fenny Rosmanita, M.M, Dosen dan Peneliti FEBUI</i>
                                 </p>
                             </div>
                              <div class="col-sm-12 col-md-2">
@@ -376,7 +387,6 @@
         </div>
     </div>
     
-	{% include 'layout/quote.html' %}
 	{% include 'layout/footer.html' %}
 	{% include 'layout/foot.html' %}
 

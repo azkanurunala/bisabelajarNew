@@ -43,3 +43,8 @@ Temporary Items
 .apdisk
 
 *.pyc
+db.sqlite3
+media/
+.settings/
+.pydevproject
+info/migrations/

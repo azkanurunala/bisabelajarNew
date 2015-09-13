@@ -1,0 +1,67 @@
+    {% if recent_news %}
+    <section id="recent-info">
+        <div class="container ">
+            <div class="row text-center  wow bounceIn">
+                
+                <!--img class="icon" src="/static/img/new_info.png"/-->
+                <h3 class="section-heading"><i class="fa fa-newspaper-o"></i> Info Terbaru</h3>
+                <hr class="primary">
+                    
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-6 wow bounceInLeft">
+                        {% for news in recent_news|slice:':1' %}
+                        <div class="row">
+                            <a class="new-info title" href="{% url 'info:details' %}{{ news.id }}">
+                                <h4 class="new-info title">{{ news.title }}</h4>
+                            </a>
+                            <a href="{% url 'info:details' %}{{ news.id }}">
+                                <img class="img-info-large" src="/media/{{ news.picture }}"/>
+                            </a>
+                            
+                            
+                            <h5 class="new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                            
+                           
+                            <p class="new-info paragraph" >
+                                {{ news.synopsis }}
+                                <a class="link-info top-margin right-margin  text-right " href="{% url 'info:details' %}{{ news.id }}" >
+                                    BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                            </p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="top-margin  col-sm-12 col-md-6 wow bounceInRight">
+                        {% for news in recent_news|slice:'1:4' %}
+                        <div class="bottom-border row">
+                            <div class="col-sm-12 col-md-5">
+                                <a href="{% url 'info:details' %}{{ news.id }}">
+                                    <img class="img-info-small" src="/media/{{ news.picture }}"/>
+                                </a>
+                            </div>
+                            <div class="no-padding col-sm-12 col-md-7">
+                                <a href="{% url 'info:details' %}{{ news.id }}">
+                                    <h4 class=" no-padding new-info title">{{ news.title }}</h4>
+                                </a>
+                                <h5 class=" new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                                <p class="new-info paragraph" >
+                                    {{ news.synopsis }}
+                                    <a class="link-info top-margin right-margin text-right" href="{% url 'info:details' %}{{ news.id }}" >  BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                        <div class="row text-right">
+                            <a class="link-info-full top-margin right-margin  text-right " href="{% url 'info:home' %}" ><h4> LIHAT SELENGKAPNYA <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></h4> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    {% endif %}

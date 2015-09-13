@@ -5,18 +5,234 @@
 
 <body id="info">
     {% include 'layout/navbar.html' %}
-	{% include 'layout/headerHalf.html' %}
-
-	{% include 'pages/info/layout/content.html' %}
-
-	
-	{% include 'layout/quote.html' %}
-
+	{% include 'layout/headerHalf.html' with title='Info' logo='/static/img/new_info.png' %}
+    
+    <!-- Artikel terbaru -->
+    {% if recent_news %}
+    <section id="recent-info">
+        <div class="container ">
+            <div class="row text-center  wow bounceIn">
+                
+                <!--img class="icon" src="/static/img/new_info.png"/-->
+                <h3 class="section-heading"><i class="fa fa-newspaper-o"></i> Info Terbaru</h3>
+                <hr class="primary">
+                    
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-6 wow bounceInLeft">
+                        {% for news in recent_news|slice:':1' %}
+                        <div class="row">
+                            <a class="new-info title" href="{% url 'info:details' %}{{ news.id }}">
+                                <h4 class="new-info title">{{ news.title }}</h4>
+                            </a>
+                            
+                            <a href="{% url 'info:details' %}{{ news.id }}">
+                                <img class="img-info-large" src="/media/{{ news.picture }}"/>
+                            </a>
+                            <h5 class="new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                            <p class="new-info paragraph" >
+                                {{ news.synopsis }}
+                                <a class="link-info top-margin right-margin  text-right " href="{% url 'info:details' %}{{ news.id }}" >
+                                    BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                            </p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="top-margin  col-sm-12 col-md-6 wow bounceInRight">
+                        {% for news in recent_news|slice:'1:4' %}
+                        <div class="bottom-border row">
+                            <div class="col-sm-12 col-md-5">
+                                <a href="{% url 'info:details' %}{{ news.id }}">
+                                    <img class="img-info-small" src="/media/{{ news.picture }}"/>
+                                </a>
+                            </div>
+                            <div class="no-padding col-sm-12 col-md-7">
+                                <a href="{% url 'info:details' %}{{ news.id }}">
+                                    <h4 class=" no-padding new-info title">{{ news.title }}</h4>
+                                </a>
+                                <h5 class=" new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                                <p class="new-info paragraph" >
+                                    {{ news.synopsis }}
+                                    <a class="link-info top-margin right-margin text-right" href="{% url 'info:details' %}{{ news.id }}" >  BACA LEBIH LANJUT <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    {% endif %}
+    
+    <!-- Artikel favorit -->
+    {% if favorite_news %}
+    <section id="new-classes" class="class-bg black-bg ">
+        <div class="container white-text">
+            <div class="row no-padding">
+                <div class=" col-sm-12 col-md-2  col-md-2 text-center wow bounceInLeft">
+                    <div class=" no-padding-top padding-narrow service-box">
+                        <bold><h3>Artikel Favorit</h3></bold>
+                        <img class="icon-medium" src="/static/img/fav.png"/>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-10 tes text-center wow bounceInRight">
+                    <div class="no-padding no-margin flexslider ">
+                        <ul class="slides">
+                            {% for news in favorite_news %}
+                            <li class="slider-content">
+                                <a class="text-center new-info title" href="{% url 'info:details' %}{{ news.id }}">
+                                    <img class="img-video-small" src="/media/{{ news.picture }}" />
+                                    <div class="img-video-cover"></div>
+                                    <h5 class="white-text  bottom-border-small">{{ news.title }}</h5>
+                                    <yellow><h5 class="no-top-margin no-top-padding" >{{ news.author }}</h5></yellow>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    <!-- Daftar Artikel-->
+	<section id="news" >
+    	<div class="container">
+            <div class="row">
+                  <h3 class="text-center section-heading"><!-- <i class="fa fa-newspaper-o"></i> --> Semua </h3>
+                  <hr class="primary">
+            </div>
+            
+            <div class="row bottom-border no-padding">
+                <!-- Daftar artikel di kolom sebelah kiri -->
+                <div class="right-border-small col-sm-12 col-md-6 ">
+                    <div class="row text-center">
+                        <!--img class="icon" src="img/new_info.png"/-->
+                        <!--<h3 class="section-heading"><i class="fa fa-newspaper-o"></i> Berita Pendidikan</h3>
+                        <hr class="primary"> -->
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-12">
+                                <!-- Artikel utama -->
+                                {% for news in paginated_news|slice:':1' %}
+                                <div class="row bottom-border">
+                                    <p>
+                                        <a class="new-info title" href="{% url 'info:details' %}{{ news.id }}">
+                                            <h4 class="new-info title">{{ news.title }}</h4>
+                                        </a>
+                                        <a href="{% url 'info:details' %}{{ news.id }}">
+                                            <img class="img-info-large" src="/media/{{ news.picture }}"/>
+                                        </a>
+                                        <h5 class="new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                                        <p class="new-info paragraph" >
+                                            {{ news.synopsis }}
+                                            <a class="link-info top-margin right-margin  text-right " href="{% url 'info:details' %}{{ news.id }}" >  BACA <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                        </p>
+                                    </p>
+                                </div>
+                                {% endfor %}
+                                
+                                <!-- Artikel lainnya -->
+                                {% for news in paginated_news|slice:'1:5' %}
+                                <div class="bottom-border row">
+                                    <div class="no-padding col-sm-12 col-md-5">
+                                      
+                                        <a href="{% url 'info:details' %}{{ news.id }}">
+                                        <img class="img-info-small" src="/media/{{ news.picture }}"/>
+                                        </a>
+                                      
+                                    </div>
+                                    <div class="no-padding col-sm-12 col-md-7">
+                                        <a href="{% url 'info:details' %}{{ news.id }}">
+                                        <h4 class=" no-padding new-info title"> {{ news.title }}</h4>
+                                        </a>
+                                        <h5 class=" new-info author ">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                                        <p class="new-info paragraph" >
+                                            {{ news.synopsis }}
+                                            <a class="link-info top-margin right-margin text-right " href="{% url 'info:details' %}{{ news.id }}" >  BACA <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Daftar artikel di kolom sebelah kanan -->
+                <div class="col-sm-12 col-md-6">
+                    <div class="row text-center">
+                        <!--img class="icon" src="img/new_info.png"/-->
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-12">
+                                {% for news in paginated_news|slice:'5:12' %}
+                                <div class="bottom-border row">
+                                    <div class="no-padding col-sm-12 col-md-5">
+                                        <a href="{% url 'info:details' %}{{ news.id }}">
+                                            <img class="img-info-small" src="/media/{{ news.picture }}"/>
+                                        </a>
+                                    </div>
+                                    <div class="no-padding col-sm-12 col-md-7">
+                                        <a href="{% url 'info:details' %}{{ news.id }}">
+                                        <h4 class="no-padding new-info title">{{ news.title }}</h4>
+                                        </a>
+                                        <h5 class="new-info author">oleh {{ news.author }} pada {{ news.created|date:'d-m-Y' }} pukul {{ news.created|time:'H:i' }}</h5>
+                                        <p class="new-info paragraph" >
+                                            {{ news.synopsis }}
+                                            <a class="link-info top-margin right-margin  text-right " href="{% url 'info:details' %}{{ news.id }}" >  BACA <span class="top-padding-narrow glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paginator -->
+            <div class="row bottom-margin-narrow  top-margin-narrow  ">
+                <div class=" col-sm-12 col-md-12 text-center">
+                    <ul class="pagination">
+                        {% if current_page.has_previous %}
+                        <li><a href="{% url 'info:home' %}{{ current_page.previous_page_number }}#news"><yellow>&lt;</yellow></a></li>
+                        {% else %}
+                        <li class="disabled"><a>&lt;</a></li>
+                        {% endif %}
+                        
+                        {% for page_number in page_range %}
+                        {% if page_number == current_page.number %}
+                        <li class="active yell-bg-2"><a href="#news">{{ page_number }}</a></li>
+                        {% else %}
+                        <li><a href="{% url 'info:home' %}{{ page_number }}#news"><yellow>{{ page_number }}</yellow></a></li>
+                        {% endif %}
+                        {% endfor %}
+                        
+                        
+                        {% if current_page.has_next %}
+                        <li><a href="{% url 'info:home' %}{{ current_page.next_page_number }}#news"><yellow>&gt;</yellow></a></li>
+                        {% else %}
+                        <li class="disabled"><a>&gt;</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	{% include 'layout/footer.html' %}
-
 	{% include 'layout/foot.html' %}
-
-
 </body>
 </html>
